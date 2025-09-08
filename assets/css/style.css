@@ -159,6 +159,10 @@ a:hover {
     align-items: center;
   }
 }
+.btn--primary {
+  color: #ffffff;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
