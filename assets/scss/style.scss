@@ -247,3 +247,51 @@ a:hover { text-decoration: underline; }
 // @media (prefers-color-scheme: dark) { /* overrides here */ }
 //
 
+
+/* Social icons in nav */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  a {
+    color: $neutral-900;
+    display: flex;
+    align-items: center;
+    &:hover { color: $accent; }
+  }
+}
+
+/* Contact dropdown */
+.contact-dropdown {
+  position: relative;
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: $white;
+    border: 1px solid $neutral-200;
+    border-radius: $radius-md;
+    box-shadow: $shadow-1;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    z-index: 100;
+
+    li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: $neutral-800;
+      text-decoration: none;
+      &:hover { background: $neutral-200; }
+    }
+  }
+
+  &.open .dropdown-menu {
+    display: block;
+  }
+}

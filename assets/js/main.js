@@ -23,3 +23,18 @@
   const y = document.getElementById('year');
   if (y) y.textContent = String(new Date().getFullYear());
 })();
+
+// Contact dropdown toggle
+document.querySelectorAll('.contact-dropdown').forEach(drop => {
+  const btn = drop.querySelector('button');
+  btn.addEventListener('click', () => {
+    drop.classList.toggle('open');
+  });
+
+  // Close if clicked elsewhere
+  document.addEventListener('click', (e) => {
+    if (!drop.contains(e.target)) {
+      drop.classList.remove('open');
+    }
+  });
+});
