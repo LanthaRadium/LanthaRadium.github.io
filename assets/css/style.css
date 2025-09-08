@@ -160,7 +160,7 @@ a:hover {
   }
 }
 .btn--primary {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .btn {
