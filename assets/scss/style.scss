@@ -218,6 +218,7 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid $neutral-200;
   background: #fafafa;
   padding: $space-5 0;
+  margin: 0;
 }
 .footer-inner {
   display: flex; flex-direction: column; gap: $space-3; align-items: center; justify-content: space-between;
@@ -229,7 +230,6 @@ a:hover { text-decoration: underline; }
 @media (min-width: 800px) {
   .footer-inner { flex-direction: row; }
 }
-.social {margin: 0 0 0 0;}
 
 // ---------------------------
 // Utility
