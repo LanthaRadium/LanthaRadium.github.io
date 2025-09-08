@@ -218,12 +218,11 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid $neutral-200;
   background: #fafafa;
   padding: $space-5 0;
-  margin: 0;
 }
 .footer-inner {
   display: flex; flex-direction: column; gap: $space-3; align-items: center; justify-content: space-between;
 }
-.footer-inner p { color: $neutral-600; }
+.footer-inner p { color: $neutral-600; margin: 0; }
 .social {
   list-style: none; display: flex; gap: $space-3; padding: 0; margin: 0;
 }
