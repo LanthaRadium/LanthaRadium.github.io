@@ -6,3 +6,5 @@
 # Sass / CSS
 .sass-cache/
 *.css.map
+
+*.txt

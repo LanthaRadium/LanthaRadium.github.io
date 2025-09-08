@@ -2,28 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lara Mestdagh • Portfolio</title>
+  <meta name="description" content="Portfolio of Lara Mestdagh — AI Engineer focusing on NLP, Computer Vision, and healthcare applications." />
+  <meta name="theme-color" content="#174a2c" />
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <!-- Social preview -->
+  <meta property="og:title" content="Lara Mestdagh • Portfolio" />
+  <meta property="og:description" content="AI Engineer focusing on NLP, Computer Vision, and healthcare applications." />
+  <meta property="og:image" content="assets/img/preview.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <span class="brand__mark" aria-hidden="true">LM</span>
+        <span class="brand__text">Lara Mestdagh</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="assets/Lara_Mestdagh_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+          <li><a class="btn btn--primary" href="mailto:laramestdagh2002@gmail.com">Contact</a></li>
+          <!-- TODO: all links/references should be variables, example email address -->
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where my work and story go!</p>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>AI Engineer with a passion for healthcare</h1>
+          <p>
+            I build practical AI solutions across NLP, Computer Vision, and data workflows.
+            Currently crafting portfolio projects and exploring roles in Belgium, West and East Flanders.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="projects.html">See Projects</a>
+            <a class="btn btn--ghost" href="about.html">About Me</a>
+          </div>
+        </div>
+
+        <figure class="hero__photo">
+          <!-- Replace with your own image -->
+          <img src="assets/img/picture.jpg" alt="Portrait of Lara Mestdagh" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS / QUICK LINKS -->
+    <section class="cards">
+      <div class="container cards__grid">
+        <article class="card">
+          <h2>Featured Bachelor Thesis Project</h2>
+          <p>AI Children’s Storyteller — Llama 3.1 + MeloTTS + MusicGen (PoC)</p>
+          <div class="card__actions">
+            <a class="btn btn--small" href="projects.html#storyteller">View</a>
+            <a class="btn btn--small btn--ghost" href="https://github.com/LanthaRadium/AI-StoryTeller" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Latest Work</h2>
+          <p>TBC</p>
+          <div class="card__actions">
+            <a class="btn btn--small" href="projects.html">View</a>
+            <a class="btn btn--small btn--ghost" href="" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Resume</h2>
+          <p>Download a concise PDF resume highlighting AI, MLOps, and healthcare.</p>
+          <div class="card__actions">
+            <a class="btn btn--small" href="assets/docs/CV_Lara_Mestdagh.pdf" target="_blank" rel="noopener">Open CV</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Lara Mestdagh</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Lara Mestdagh</p>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/lara-mestdagh-077385309" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/LanthaRadium" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:laramestdagh2002@gmail.com">Email</a></li>
+      </ul>
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
-</html>
+</html
